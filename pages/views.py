@@ -16,3 +16,12 @@ def contact(request):
 
 def cars(request):
     return render(request, 'pages/cars.html')
+
+def login(request):
+    return render(request, 'accounts/login.html')
+
+def register(request):
+    return render(request, 'accounts/register.html')
+
+def search(request):
+    return render(request, 'pages/search.html')
