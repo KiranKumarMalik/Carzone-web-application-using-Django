@@ -25,3 +25,6 @@ def register(request):
 
 def search(request):
     return render(request, 'pages/search.html')
+
+def admin(request):
+    return render(request, 'admin/admin.html')
