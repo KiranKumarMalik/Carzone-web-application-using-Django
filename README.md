@@ -62,5 +62,5 @@ Car Zone is a Django web application designed for a used car business owner who 
 
 # 6. Admin Page
 
-![about](https://github.com/KiranKumarMalik/Carzone-web-application-using-Django/blob/b459df58858ed6710544862a4592c7b46161d362/ss/contacts.png)
+![about](https://github.com/KiranKumarMalik/Carzone-web-application-using-Django/blob/d5039451934ab5ed2e2cd3e0566762453b9984ef/ss/admin.png)
 
