@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ckeditor',
+    'django_ckeditor_5',
+    'django.contrib.humanize',
     'allauth',
     'allauth.socialaccount',
     'allauth.account',
