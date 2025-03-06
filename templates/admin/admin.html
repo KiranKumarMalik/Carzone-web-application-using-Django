@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block tile %}Admin{% endblock %}
 {% block branding %}
   <h1 id="head">
-    <a href="/admin"><img src="{% static 'img/logos/black-logo.png' %}" alt="" class="brand_img" height="50" width="300"></a>
+    <a href="{% url 'admin' %}"><img src="{% static 'img/logos/black-logo.png' %}" alt="" class="brand_img" height="50" width="300"></a>
   </h1>
 {% endblock %}
 
