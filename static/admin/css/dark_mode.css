@@ -38,7 +38,7 @@
 
 html[data-theme="dark"] {
     --primary: #264b5d;
-    --primary-fg: #f7f7f7;
+    --primary-fg: #000000;
 
     --body-fg: #eeeeee;
     --body-bg: #121212;
