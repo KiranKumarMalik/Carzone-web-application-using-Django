@@ -6,10 +6,18 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-def login(request):
+from django.contrib.auth.models import User
+
+def user_login(request):
     if request.method == 'POST':
-        username = request.POST['username']
+        email = request.POST['email']
         password = request.POST['password']
+
+        try:
+            username = User.objects.get(email=email).username
+        except User.DoesNotExist:
+            messages.error(request, 'User with this email does not exist.')
+            return redirect('login')
 
         user = auth.authenticate(username=username, password=password)
 
@@ -18,9 +26,10 @@ def login(request):
             messages.success(request, 'You are now logged in.')
             return redirect('dashboard')
         else:
-            messages.error(request, 'Invalid login credentials')
+            messages.error(request, 'Invalid login credentials.')
             return redirect('login')
     return render(request, 'accounts/login.html')
+
 
 def register(request):
     if request.method == 'POST':
